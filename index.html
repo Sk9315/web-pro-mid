@@ -36,7 +36,6 @@ rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bR
             color: goldenrod;
       }
 
-     
       .hero-section {
             display: flex;
             justify-content: space-around;
@@ -45,78 +44,85 @@ rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bR
             padding: 20px;
       }
       
-     
       img {
             max-width: 100%;
             height: auto;
       }
-      
-     
+
       @media only screen and (max-width: 767px) {
+            /* Header */
             header {
-                  flex-direction: column;
-                  align-items: center;
-                  text-align: center;
-                  gap: 15px;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                padding: 10px;
             }
-            
             .menu {
-                  display: flex;
-                  flex-direction: column;
-                  gap: 10px;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            .menu span {
+                margin-right: 0;
             }
             
+            /* Hero Section */
             .heading {
-                  font-size: 32px;
-                  text-align: center;
+                font-size: 32px;
+                text-align: center;
             }
-            
             .hero-section {
-                  flex-direction: column;
-                  text-align: center;
+                padding: 10px;
+                text-align: center;
             }
-            
-            .hero-section div:first-child {
-                  margin-bottom: 30px;
-            }
-            
             .hero-section img {
-                  width: 100%;
-                  height: auto;
+                width: 100%;
+                height: auto;
+                margin-top: 20px;
+            }
+            .hero-section button {
+                margin: 5px !important;
             }
             
-            .card {
-                  width: 100% !important;
-                  margin: 10px 0 !important;
-            }
-            
-            .btn {
-                  display: block;
-                  width: 100%;
-                  margin: 10px 0 !important;
-            }
-            
+            /* Full-width Images */
             section img {
-                  width: 100%;
-                  height: auto;
+                width: 100% !important;
+                height: auto !important;
             }
-      }
-      
-      
-      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            
+            /* Course Filter Buttons */
+            .bg-info-subtle .d-flex {
+                flex-wrap: wrap;
+                width: 100% !important;
+            }
+            .bg-info-subtle .btn {
+                margin: 5px;
+                width: 45%;
+            }
+            
+            /* Cards Grid */
             .card_body {
-                  grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+            .card {
+                width: 100% !important;
+                margin-bottom: 20px;
             }
             
-            .heading {
-                  font-size: 40px;
+            /* Footer */
+            footer .row {
+                flex-direction: column;
             }
-            
-            .hero-section img {
-                  width: 350px;
-                  height: auto;
+            footer .col-lg-3, 
+            footer .col-lg-6 {
+                text-align: center;
+                margin-bottom: 30px;
             }
-      }
+            footer .nav {
+                justify-content: center;
+            }
+        }
 </style>
 </head>
 <body >
@@ -159,7 +165,16 @@ rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bR
             <p class="heading align-items-center justify-content-center d-flex">Most Popular course</p>
             <p class="align-items-center justify-content-center d-flex">Choose from hundreds of courses from specialist organizations</p>
             <div>
-                  <img src="./public/images/img/i4.png" alt=""  width="1200" height="100" >
+                  <div class="bg-info-subtle d-flex justify-content-center mt-4  ms-5 me-5 mb-4">
+                        <div class="d-flex justify-content-around w-75 p-3 fs-5">
+                            <span class="btn btn-primary btn-lg">Web design</span>
+                            <span class="btn btn-lg">Development</span>
+                            <span class="btn btn-lg">Graphic design</span>
+                            <span class="btn btn-lg">Marketing</span>
+                            <span class="btn btn-lg">Finance</span>
+            
+                        </div>
+                    </div>
             </div>
       </section>
 
@@ -171,7 +186,7 @@ rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bR
                               <div class=" bg-danger text-white border rounded-5 p-1 fs-6">
                                     all level
                               </div>
-                              <div class="  bi bi-heart align-items-end"></div>
+                              <div class=" bi bi-heart align-items-end"></div>
                         </div>
                     <h5 class="card-title">Sketch from A to Z: for app designer</h5>
                     <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
@@ -185,8 +200,8 @@ rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bR
                   </div>
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item d-flex justify-content-between">
-                        <span class=" bi bi-clock">12h 56m</span>
-                        <span class=" bi bi-calendar">15 lectures</span>
+                        <span class=" bi bi-clock">19h 54m</span>
+                        <span class=" bi bi-calendar">56 lectures</span>
                   </li>
                   </ul>
                 </div>
@@ -198,9 +213,9 @@ rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bR
                               <div class=" bg-danger text-white border rounded-5 p-1 fs-6">
                                     all level
                               </div>
-                              <div class="  bi bi-heart align-items-end"></div>
+                              <div class=" bi bi-heart align-items-end"></div>
                         </div>
-                    <h5 class="card-title">Sketch from A to Z: for app designer</h5>
+                    <h5 class="card-title">Sketch from A to Z: for Photo Editor</h5>
                     <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
                     <div>
                         <span class=" bi bi-star-fill "></span>
@@ -212,8 +227,8 @@ rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bR
                   </div>
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item d-flex justify-content-between">
-                        <span class=" bi bi-clock">12h 56m</span>
-                        <span class=" bi bi-calendar">15 lectures</span>
+                        <span class=" bi bi-clock">15h 22m</span>
+                        <span class=" bi bi-calendar">19 lectures</span>
                   </li>
                   </ul>
                 </div>
@@ -225,7 +240,7 @@ rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bR
                               <div class=" bg-danger text-white border rounded-5 p-1 fs-6">
                                     all level
                               </div>
-                              <div class="  bi bi-heart align-items-end"></div>
+                              <div class=" bi bi-heart align-items-end"></div>
                         </div>
                     <h5 class="card-title">Sketch from A to Z: for app designer</h5>
                     <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
@@ -234,7 +249,7 @@ rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bR
                         <span class=" bi bi-star-fill "></span>
                         <span class=" bi bi-star-fill "></span>
                         <span class=" bi bi-star-fill "></span>
-                        <span class=" bi  bi-star-half "></span>&nbsp; 4.8/5
+                        <span class=" bi  bi-star-half "></span>&nbsp; 4.1/5
                     </div>
                   </div>
                   <ul class="list-group list-group-flush">
@@ -251,22 +266,22 @@ rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bR
                               <div class=" bg-danger text-white border rounded-5 p-1 fs-6">
                                     all level
                               </div>
-                              <div class="  bi bi-heart align-items-end"></div>
+                              <div class=" bi bi-heart align-items-end"></div>
                         </div>
-                    <h5 class="card-title">Sketch from A to Z: for app designer</h5>
+                    <h5 class="card-title">Sketch from A to Z: for web designer</h5>
                     <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
                     <div>
                         <span class=" bi bi-star-fill "></span>
                         <span class=" bi bi-star-fill "></span>
                         <span class=" bi bi-star-fill "></span>
                         <span class=" bi bi-star-fill "></span>
-                        <span class=" bi  bi-star-half "></span>&nbsp; 4.8/5
+                        <span class=" bi  bi-star-half "></span>&nbsp; 4.9/5
                     </div>
                   </div>
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item d-flex justify-content-between">
-                        <span class=" bi bi-clock">12h 56m</span>
-                        <span class=" bi bi-calendar">15 lectures</span>
+                        <span class=" bi bi-clock">30h 50m</span>
+                        <span class=" bi bi-calendar">50 lectures</span>
                   </li>
                   </ul>
                 </div>
@@ -277,7 +292,7 @@ rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bR
                               <div class=" bg-danger text-white border rounded-5 p-1 fs-6">
                                     all level
                               </div>
-                              <div class="  bi bi-heart align-items-end"></div>
+                              <div class=" bi bi-heart align-items-end"></div>
                         </div>
                     <h5 class="card-title">Sketch from A to Z: for app designer</h5>
                     <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
@@ -286,13 +301,13 @@ rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bR
                         <span class=" bi bi-star-fill "></span>
                         <span class=" bi bi-star-fill "></span>
                         <span class=" bi bi-star-fill "></span>
-                        <span class=" bi  bi-star-half "></span>&nbsp; 4.8/5
+                        <span class=" bi  bi-star-half "></span>&nbsp; 4.0/5
                     </div>
                   </div>
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item d-flex justify-content-between">
-                        <span class=" bi bi-clock">12h 56m</span>
-                        <span class=" bi bi-calendar">15 lectures</span>
+                        <span class=" bi bi-clock">112h 52m</span>
+                        <span class=" bi bi-calendar">233 lectures</span>
                   </li>
                   </ul>
                 </div>
@@ -303,7 +318,7 @@ rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bR
                               <div class=" bg-danger text-white border rounded-5 p-1 fs-6">
                                     all level
                               </div>
-                              <div class="  bi bi-heart align-items-end"></div>
+                              <div class=" bi bi-heart align-items-end"></div>
                         </div>
                     <h5 class="card-title">Sketch from A to Z: for app designer</h5>
                     <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
@@ -312,13 +327,13 @@ rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bR
                         <span class=" bi bi-star-fill "></span>
                         <span class=" bi bi-star-fill "></span>
                         <span class=" bi bi-star-fill "></span>
-                        <span class=" bi  bi-star-half "></span>&nbsp; 4.8/5
+                        <span class=" bi  bi-star-half "></span>&nbsp; 4.6/5
                     </div>
                   </div>
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item d-flex justify-content-between">
-                        <span class=" bi bi-clock">12h 56m</span>
-                        <span class=" bi bi-calendar">15 lectures</span>
+                        <span class=" bi bi-clock">10h 56m</span>
+                        <span class=" bi bi-calendar">19 lectures</span>
                   </li>
                   </ul>
                 </div>
@@ -329,7 +344,7 @@ rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bR
                               <div class=" bg-danger text-white border rounded-5 p-1 fs-6">
                                     all level
                               </div>
-                              <div class="  bi bi-heart align-items-end"></div>
+                              <div class=" bi bi-heart align-items-end"></div>
                         </div>
                     <h5 class="card-title">Sketch from A to Z: for app designer</h5>
                     <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
@@ -338,13 +353,13 @@ rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bR
                         <span class=" bi bi-star-fill "></span>
                         <span class=" bi bi-star-fill "></span>
                         <span class=" bi bi-star-fill "></span>
-                        <span class=" bi  bi-star-half "></span>&nbsp; 4.8/5
+                        <span class=" bi  bi-star-half "></span>&nbsp; 4.2/5
                     </div>
                   </div>
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item d-flex justify-content-between">
                         <span class=" bi bi-clock">12h 56m</span>
-                        <span class=" bi bi-calendar">15 lectures</span>
+                        <span class=" bi bi-calendar">12 lectures</span>
                   </li>
                   </ul>
                 </div>
@@ -355,7 +370,7 @@ rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bR
                               <div class=" bg-danger text-white border rounded-5 p-1 fs-6">
                                     all level
                               </div>
-                              <div class="  bi bi-heart align-items-end"></div>
+                              <div class=" bi bi-heart align-items-end"></div>
                         </div>
                     <h5 class="card-title">Sketch from A to Z: for app designer</h5>
                     <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
@@ -385,13 +400,113 @@ rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bR
                   <img src="./public/images/img/i10.png" alt="" width="1200" height="600">
             </div>
       </section>
-      <section>
-            <div>
-                  <img src="./public/images/img/i11.png" alt=""width="1200" height="700">
+      
+      <footer class="pt-5">
+            <div class="container">
+                <div class="row g-4">
+    
+                    <div class="col-lg-3">
+    
+                        <a class="me-0" href="index.html">
+                            <img class="logo" src="./public/images/img/logo.png" alt="logo">
+                        </a>
+                        <p class="my-3">Eduport education theme, built specifically for the education centers which is
+                            dedicated to teaching and involve learners.</p>
+                        <ul class="list-inline mb-0 mt-3">
+                            <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-facebook"
+                                    href="#"><i class="bi bi-fw bi-facebook"></i></a> </li>
+                            <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-instagram"
+                                    href="#"><i class="bi bi-instagram"></i></a> </li>
+                            <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-twitter"
+                                    href="#"><i class="bi bi-twitter"></i></a> </li>
+                            <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-linkedin"
+                                    href="#"><i class="bi bi-linkedin"></i></a> </li>
+                        </ul>
+                    </div>
+                    <!-- Widget 1 END -->
+    
+                    <!-- Widget 2 START -->
+                    <div class="col-lg-6">
+                        <div class="row g-4">
+                            <!-- Link block -->
+                            <div class="col-6 col-md-4">
+                                <h5 class="mb-2 mb-md-4">Company</h5>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">News and Blogs</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Library</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Career</a></li>
+                                </ul>
+                            </div>
+    
+                            <!-- Link block -->
+                            <div class="col-6 col-md-4">
+                                <h5 class="mb-2 mb-md-4">Community</h5>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href="#">Documentation</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Faq</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Forum</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Sitemap</a></li>
+                                </ul>
+                            </div>
+    
+                            <!-- Link block -->
+                            <div class="col-6 col-md-4">
+                                <h5 class="mb-2 mb-md-4">Teaching</h5>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href="#">Become a teacher</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">How to guide</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Terms &amp; Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Widget 2 END -->
+    
+                    <!-- Widget 3 START -->
+                    <div class="col-lg-3">
+                        <h5 class="mb-2 mb-md-4">Contact</h5>
+                        <!-- Time -->
+                        <p class="mb-2">
+                            Toll free:<span class="h6 fw-light ms-2">+1234 568 963</span>
+                            <span class="d-block small">(9:AM to 8:PM IST)</span>
+                        </p>
+    
+                        <p class="mb-0">Email:<span class="h6 fw-light ms-2">example@gmail.com</span></p>
+    
+                        <div class="row g-2 mt-2">
+                            <!-- Google play store button -->
+                            <div class="col-6 col-sm-4 col-md-3 col-lg-6">
+                               
+                            </div>
+                            <!-- App store button -->
+                            <div class="col-6 col-sm-4 col-md-3 col-lg-6">
+                            </div>
+                        </div> Row END
+                    </div>
+                    <!-- Widget 3 END -->
+                </div><!-- Row END -->
+    
+                <!-- Divider -->
+                <hr class="mt-4 mb-0">
+    
+                <!-- Bottom footer -->
+                <div class="py-3">
+                    <div class="container px-0">
+                        <div class="d-lg-flex justify-content-between align-items-center py-3 text-center text-md-left">
+                            <!-- copyright text -->
+                            <div class="text-body text-primary-hover"> Copyrights ©2024 Eduport. Build by <a
+                                    href="https://www.webestica.com/" target="_blank" class="text-body">Webestica</a></div>
+                            <!-- copyright links-->
+                            <div class="justify-content-center mt-3 mt-lg-0">
+                                <ul class="nav list-inline justify-content-center mb-0">
+                                    <li class="list-inline-item"><a class="nav-link" href="#">Terms of use</a></li>
+                                    <li class="list-inline-item"><a class="nav-link pe-0" href="#">Privacy policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-      </section>
-      <footer>
-            <img src="./public/images/img/i12.png" alt="" width="1200" height="300">
-      </footer>
-</body>
-</html>
+        </footer>
